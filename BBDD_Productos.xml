@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE baseDatos [
+<!ELEMENT baseDatos (productos)>
+<!ELEMENT productos (vehiculos, ropas, electronicas, otros)>
+<!ELEMENT vehiculos (vehiculo*)>
+<!ELEMENT vehiculo (nombre, estado, descripcion, precio, modelo, color, kms)>
+<!ELEMENT ropas (ropa*)>
+<!ELEMENT ropa (nombre, estado, descripcion, precio, marca, talla, sexo)>
+<!ELEMENT electronicas (electronica*)>
+<!ELEMENT electronica (nombre, estado, descripcion, precio, modelo, tipo)>
+<!ELEMENT otros (otro*)>
+<!ELEMENT otro (nombre, estado, descripcion, precio)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT estado (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT modelo (#PCDATA)>
+<!ELEMENT color (#PCDATA)>
+<!ELEMENT kms (#PCDATA)>
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT talla (#PCDATA)>
+<!ELEMENT sexo (#PCDATA)>
+<!ELEMENT tipo (#PCDATA)>
+]>
+<baseDatos>
+<productos>
+<vehiculos>
+<vehiculo>
+<nombre>Seat</nombre>
+<estado>Bueno</estado>
+<descripcion>Vehiculo en buen estado sin ninguna averia</descripcion>
+<precio>1000</precio>
+<modelo>Ibiza</modelo>
+<color>Rojo</color>
+<kms>20000</kms>
+</vehiculo>
+<vehiculo>
+<nombre>Renault</nombre>
+<estado>Roto</estado>
+<descripcion>Necesita reparaciones</descripcion>
+<precio>500</precio>
+<modelo>Clio</modelo>
+<color>Blanco</color>
+<kms>40000</kms>
+</vehiculo>
+</vehiculos>
+<ropas>
+<ropa>
+<nombre>Camiseta</nombre>
+<estado>Sin abrir</estado>
+<descripcion>Aun tienen la etiqueta puesta</descripcion>
+<precio>20</precio>
+<marca>Nike</marca>
+<talla>M</talla>
+<sexo>Hombre</sexo>
+</ropa>
+<ropa>
+<nombre>Pantalon</nombre>
+<estado>Como Nuevo</estado>
+<descripcion>Lo he usado un par de veces pero esta en perfecto estado</descripcion>
+<precio>15</precio>
+<marca>Levis</marca>
+<talla>40</talla>
+<sexo>Mujer</sexo>
+</ropa>
+</ropas>
+<electronicas>
+<electronica>
+<nombre>Portatil pavilion</nombre>
+<estado>Bueno</estado>
+<descripcion>Ordenador portatil con muy poco tiempo de uso</descripcion>
+<precio>100</precio>
+<modelo>PH</modelo>
+<tipo>PC</tipo>
+</electronica>
+<electronica>
+<nombre>Iphone 7</nombre>
+<estado>Roto</estado>
+<descripcion>Movil con la pantalla rota por lo demas esta bien</descripcion>
+<precio>70</precio>
+<modelo>Iphone</modelo>
+<tipo>Movil</tipo>
+</electronica>
+</electronicas>
+<otros>
+<otro>
+<nombre>Mesa</nombre>
+<estado>Aceptable</estado>
+<descripcion>Mesa de escritorio bastante grande</descripcion>
+<precio>25</precio>
+</otro>
+<otro>
+<nombre>Sofa</nombre>
+<estado>Como Nuevo</estado>
+<descripcion>Sofa bastante grande caben hasta 5 personas</descripcion>
+<precio>50</precio>
+</otro>
+</otros>
+</productos>
+</baseDatos>
